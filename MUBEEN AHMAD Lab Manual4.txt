@@ -1,0 +1,85 @@
+lab task4
+MUBEEN AHMAD
+ID:459410
+
+1:PROGRAM FOR SUM OF FIRST TEN NATURAL NUMBERS:
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int sum=0;
+	int number;
+	for(int i=1; i<=10; i++){
+		cout<<"enter the"<<i<<"first ten natural numbers";
+		cin>>number;
+		sum+=number;
+	}
+		cout<<"The sum of first en natural numbers is:"<<sum<<endl;
+	return 0;
+}
+
+
+2:PROGRAM TO PRINT TABLE OF ANY NUMBER:
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Enter a num: ";
+    cin >> num;
+    cout << "Table for " << num << ":\n";
+    cout << "------------------\n";    
+    for (int i = 1; i <= 10; i++) {
+        cout<<num <<"*"<<i<<"="<<(num * i)<<endl;
+    }
+    return 0;
+}
+
+
+3:PROGRAM TO GENERATE FACTPORIAL:
+
+#include<iostream>
+using namespace std;
+int main(){
+int num;
+    int Factorial=1;
+    cout<<"Enter a num: ";
+    cin>>num;
+    for (int i=1; i<=num; i++) {
+    	Factorial*=i;
+	}
+	cout << "Factorial of "<<num<<"! = " << Factorial << endl;	
+	return 0;
+}
+    
+
+4:PROGRAM TO PRINT FIBONACCI SEQUENCE:
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int first = 0, second = 1;
+
+    // Ask the user for the maximum number in the Fibonacci sequence
+    cout << "Enter the maximum number in the Fibonacci sequence: ";
+    cin >> n;
+    cout << "Fibonacci sequence up to " << n << ":\n";
+    cout << first << " ";
+    if (n >= 1) {
+        cout << second << " ";
+    }
+    for (int i = 2; first + second <= n; i++) {
+        int next = first + second;
+        cout << next << " ";
+        first = second;
+        second = next;
+    }
+    cout << endl;
+    return 0;
+}
+
